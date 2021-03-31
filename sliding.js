@@ -7,10 +7,16 @@ const sliding = () => {
     menuListSliding.classList.toggle("slide-end");
     // Animate Links
     navLinks.forEach((link, index) => {
-      link.style.animation =
-        " navLinkSlide 0.5s ease forwards ${ index / 7 + 0.3s}s";
-      console.log(index / 7);
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = ` navLinkSlide 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s`;
+      }
     });
+    //Burger Animation
+    hamburgerSliding.classList.toggle("toggle");
   });
 };
 
