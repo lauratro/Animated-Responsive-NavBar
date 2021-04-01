@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="scroll.css" type="text/css">
+    <title>Document</title>
+  </head>
+  <body>
+         <header>
+      <nav class="nav-scroll">
+          
+          <div class="logo-scroll">
+              <h4>The Fluid-Scroll</h4>
+          </div>
+
+        <ul class="menu-list-scroll">
+          <li class="list-elem-sc "><a data-page="bubble" href="index.html">Bubble Navbar</li></a>
+          <li class="list-elem-sc"><a data-page="sliding"href="sliding-navbar.html">Sliding NavBar</li></a>
+          <li class="list-elem-sc  underline-text"><a data-page="scroll">Scroll Navbar</li></a>
+        </ul>
+        <div class="hamburger-scroll">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+          </div>
+      </nav>
+    </header>
+    <main>
+        <section data-index="0" class="bubble">
+            <h2>Bubble Navbar</h2>
+        </section>
+          <section data-index="1" class="sliding">
+            <h2>Sliding Navbar</h2>
+        </section>
+          <section data-index="2" class="scroll">
+            <h2>Fluid-Scroll Navbar</h2>
+        </section>
+    </main>
+    <script src="scroll.js"></script>
+  </body>
+</html>
