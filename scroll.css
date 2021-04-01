@@ -14,18 +14,19 @@ header {
 }
 nav h4,
 nav ul {
-  font-size: 1.5rem;
-  flex: 1;
+  font-size: 1rem;
 }
 
-nav ul {
+.menu-list-scroll {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 nav a {
   color: black;
   text-decoration: none;
+  margin: 10px;
+  text-align: center;
 }
 
 section {
@@ -39,5 +40,18 @@ section h2 {
   color: whitesmoke;
 }
 .bubble {
-  background: ;
+  background: linear-gradient(to right top, #12c2e962, #c471ed, #f64f59);
+}
+.sliding {
+  background: linear-gradient(to right top, #b92b27, #1565c0, #f64f59);
+}
+.scroll {
+  background: linear-gradient(to right top, #40e0d0, #ff8c00, #ff0080);
+}
+.bglink {
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(to right top, #12c2e962, #c471ed, #f64f59);
+  transform: scale(1.2);
+  transition: all 0.5s ease;
 }
